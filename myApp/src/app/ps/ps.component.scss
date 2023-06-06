@@ -1,0 +1,72 @@
+.cabecalho {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.logo {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.PS {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.PEDIDO {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.LOCAL {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.box1 {
+    width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0px;
+}
+
+.NPS {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.identificacao {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.CODIGO {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.ideq {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
