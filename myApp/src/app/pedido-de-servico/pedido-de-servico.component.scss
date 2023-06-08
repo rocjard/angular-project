@@ -1,0 +1,26 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+    div {
+      place-self: center;
+    }
+  }
+  
+  .equipamento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .codigo-equipamento {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .descricao {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .indicativo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
