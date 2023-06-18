@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-formulario-pedido-de-servico',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./formulario-pedido-de-servico.component.scss']
 })
 export class FormularioPedidoDeServicoComponent {
+
+
+  // onSubimit(form: NgForm) {
+  //   console.log(form);
+  // }
+
+  onSubmit() {
+    console.log();
+  }
 
 }

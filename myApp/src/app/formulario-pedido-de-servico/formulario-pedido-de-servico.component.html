@@ -1,1 +1,50 @@
-<p>formulario-pedido-de-servico works!</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form #f="ngForm" (ngSubmit)="onSubmit()">
+      <header>
+        <div>Logo da Roraima Energia</div>
+        <div>P.S. Pedido de Serviços</div>
+        <div>
+          <div>Local: <input type="text" name="local" id="local" ngModel required></div>
+          <div>Nº P.S.: <input type="text" name="numero-pedido-de-servico" id="numero-pedido-de-servico" ngModel required></div>
+        </div>
+      </header>
+      <section class="equipamento">
+        <div class="codigo-equipamento">Código: <input type="text" name="codigo-equipamento" id="codigo-equipamento" ngModel required></div>
+        <div>Identificação do equipamento: <input type="text" name="identificacao-equipamento" id="identificacao-equipamento" ngModel required></div>
+        <div>Condição do equipamento: 
+          <select name="condicao-do-equipamento" id="condicao-do-equipamento">
+            <option value="em-condicoes-de-funcionamento">01 - EM CONDIÇÕES DE FUNCIONAMENTO</option>
+            <option value="inoperante">02 - INOPERANTE</option>
+            <option value="em-montagem-comicionamento">03 - EM MONTAGEM / COMISSIONAMENTO</option>
+            <option value="almoxarifado-oficina">04 - ALMOXARIFADO / OFICINA</option>
+          </select>
+        </div>
+        <div>Data:</div>
+        <div>Hora: 09:45</div>
+      </section>
+      <section class="descricao">
+        <div>Descrição da anormalidade manifesta ou dos serviços: Verificar falha de comunicação via SAGE com a SE Satélite</div>
+      </section>
+      <section class="indicativo">
+        <div>Indicativo da anormalidade ou serviços: 08 - Ajuste de relés</div>
+        <div>Prioridade: 03 - Emergente</div>
+        <div>Necessidade de desligamento: Não</div>
+        <div>Duração do desligamento: XX:XX</div>
+        <div>Programação: XX</div>
+        <div>Semana: XX</div>
+        <div>Equipe: DTM</div>
+        <div>Órgão: DTO</div>
+        <div>Emissor: Wellignton Moreno</div>
+        <div>Matrícula: 80142</div>
+      </section>
+    </form>
+  </body>
+</html>
